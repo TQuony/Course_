@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ef62054b6837f449904e8b8ff31b816, type: 3}
+  m_Name: Rat
+  m_EditorClassIdentifier: 
+  description: "\u041E\u0431\u044B\u0447\u043D\u0430\u044F \u043A\u0440\u044B\u0441\u0430"
+  enemyName: Rat
+  art: {fileID: 21300000, guid: cded89fd665c5564f982278a9f455365, type: 3}
