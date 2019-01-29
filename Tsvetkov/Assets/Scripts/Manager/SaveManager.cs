@@ -4,11 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using System.IO;
+using DefaultNamespace;
 
-public class SaveManager : MonoBehaviour, IGameManager//Наследуем класс и реализуем интерфейс.
+public class SaveManager : ISaveManager //Наследуем класс и реализуем интерфейс.
 {
     public ManagerStatus status { get; private set; }
     public Button btnContinue { get; set; }
+    
+    
     private Save sv = new Save();
     public void Startup()
     {

@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine.UI;
-public class MissionManager : MonoBehaviour, IGameManager
+public class MissionManager : IGameManager
 {
+    private readonly ISaveManager _saveManager;
     public ManagerStatus status { get; private set; }
     public int curLevel { get;  set; }
     public int maxLevel { get; private set; }
@@ -11,6 +13,12 @@ public class MissionManager : MonoBehaviour, IGameManager
     public Animator _animator { get; set; }
     public GameObject[,]  objMap { get; set; }
     public int[] wayLevel { get; set; }
+
+    public MissionManager(ISaveManager saveManager)
+    {
+        _saveManager = saveManager;
+    }
+
     public void Startup()
     {
         status = ManagerStatus.Started;
@@ -86,8 +94,8 @@ public class MissionManager : MonoBehaviour, IGameManager
         arr[2, size-1] = 100;
         arr[3, size-1] = 1;
         arr[4, size - 1] = 1;
-        Managers.saveManager.CheckLevel(arr);
-        Managers.saveManager.CheclCurLevel(curLevel);
+        _saveManager.CheckLevel(arr);
+        _saveManager.CheclCurLevel(curLevel);
         level = arr;
     }
 }

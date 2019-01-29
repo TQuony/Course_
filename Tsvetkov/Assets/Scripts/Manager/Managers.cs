@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
 
 [RequireComponent(typeof(SaveManager))]
@@ -11,7 +12,7 @@ using UnityEngine;
 
 public class Managers : MonoBehaviour
 {
-    public static SaveManager    saveManager { get; private set; }
+    public SaveManager  saveManager { get; private set; }
     public static GameManager    gameManager { get; private set; }
     public static PlayerManager  Player { get; private set; }
     public static EnemyManager   Enemy { get; private set; }
@@ -23,14 +24,16 @@ public class Managers : MonoBehaviour
     void Awake()
     {
         DontDestroyOnLoad(gameObject); // Команда Unity для сохранения объекта между сценами.
-        saveManager = GetComponent<SaveManager>();
+        saveManager = new SaveManager(); // GetComponent<SaveManager>();
         gameManager = GetComponent<GameManager>();
         Player      = GetComponent<PlayerManager>();
         Inventory   = GetComponent<InventoryManager>();
         Enemy       = GetComponent<EnemyManager>();
         cardManager = GetComponent<CardsManager>();
-        Mission     = GetComponent<MissionManager>();
+        Mission     = new MissionManager(saveManager); // GetComponent<MissionManager>();
+            
         Audio = GetComponent<AudioManager>();
+        
         _startSequence = new List<IGameManager>();
         _startSequence.Add(saveManager);
         _startSequence.Add(Inventory);

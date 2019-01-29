@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\NUCSergeyIT\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\NUCSergeyIT\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Tsvetkov.1787377310.00" t="ExcludeRecursive" />
+    <e p="D:\My_Work\My_XIM\My_Lectures\HomeWork\CvetkovEvgeniy\Course_\Tsvetkov" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets\Scripts" t="Include">
+        <e p="CardScripts" t="Include">
+          <e p="Card.cs" t="Include" />
+          <e p="CardDisplay.cs" t="Include" />
+          <e p="CardMove.cs" t="Include" />
+          <e p="CardRotator.cs" t="Include" />
+          <e p="Draggable.cs" t="Include" />
+          <e p="EnemePlayCard.cs" t="Include" />
+        </e>
+        <e p="GameClass" t="Include">
+          <e p="DisplayClass.cs" t="Include" />
+          <e p="DisplayEnemy.cs" t="Include" />
+          <e p="Enemy.cs" t="Include" />
+          <e p="GameClass.cs" t="Include" />
+        </e>
+        <e p="Interfaces" t="Include">
+          <e p="ISaveManager.cs" t="Include" />
+        </e>
+        <e p="Inventory" t="Include">
+          <e p="Item.cs" t="Include" />
+          <e p="ItemDisplay.cs" t="Include" />
+          <e p="Slot.cs" t="Include" />
+        </e>
+        <e p="Manager" t="Include">
+          <e p="AudioManager.cs" t="Include" />
+          <e p="CardsManager.cs" t="Include" />
+          <e p="EnemyManager.cs" t="Include" />
+          <e p="GameEvent.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
+          <e p="IGameManager.cs" t="Include" />
+          <e p="InventoryManager.cs" t="Include" />
+          <e p="Managers.cs" t="Include" />
+          <e p="ManagerStatus.cs" t="Include" />
+          <e p="Messenger.cs" t="Include" />
+          <e p="MissionManager.cs" t="Include" />
+          <e p="PlayerManager.cs" t="Include" />
+          <e p="SaveManager.cs" t="Include" />
+        </e>
+        <e p="Other" t="Include">
+          <e p="moveTxtDamage.cs" t="Include" />
+          <e p="SceneController.cs" t="Include" />
+          <e p="SceneLoading.cs" t="Include" />
+          <e p="SceneMenu.cs" t="Include" />
+          <e p="setTxt.cs" t="Include" />
+        </e>
+        <e p="Table" t="Include">
+          <e p="DropZone.cs" t="Include" />
+          <e p="EditPath.cs" t="Include" />
+        </e>
+        <e p="UI" t="Include">
+          <e p="AnimationEvents.cs" t="Include" />
+          <e p="CreateMaps.cs" t="Include" />
+          <e p="DeckPopup.cs" t="Include" />
+          <e p="EquppedPopup.cs" t="Include" />
+          <e p="InventoryPopup.cs" t="Include" />
+          <e p="MouseClick.cs" t="Include" />
+          <e p="MouseTouch.cs" t="Include" />
+          <e p="RadialLayout.cs" t="Include" />
+          <e p="ScriptCamera.cs" t="Include" />
+          <e p="SelectClass.cs" t="Include" />
+          <e p="UIButtons.cs" t="Include" />
+          <e p="UIController.cs" t="Include" />
+          <e p="UIControllerMap.cs" t="Include" />
+          <e p="VictoryPopup.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Assets\Shader" t="Include">
+        <e p="Dissolve.cs" t="Include" />
+        <e p="Dissolve_2D.shader" t="Include" />
+        <e p="Outline.cs" t="Include" />
+        <e p="Outline_2D.shader" t="Include" />
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+      <e p="Tsvetkov.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

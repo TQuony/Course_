@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.UI;
+using Object = System.Object;
 
 public class SceneMenu : MonoBehaviour {
 
@@ -9,6 +11,10 @@ public class SceneMenu : MonoBehaviour {
     [SerializeField] private AudioSource musMenu;
     [SerializeField] private AudioSource musMenu2;
     [SerializeField] private string strMusic;
+    
+    private ISaveManager _saveManager;
+
+
     void Start()
     {
         Managers.Audio.music1 = strMusic;
@@ -25,7 +31,12 @@ public class SceneMenu : MonoBehaviour {
 
         Managers.Audio.PlayMusic1();
 
-        Managers.saveManager.btnContinue = btnPrefab;
-        Managers.saveManager.CheckLoad();
+        _saveManager.btnContinue = btnPrefab;
+        _saveManager.CheckLoad();
+    }
+
+    public void SetDependecies(ISaveManager saveManager)
+    {
+        _saveManager = saveManager;
     }
 }
