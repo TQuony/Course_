@@ -4,7 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Card_Reward
+  - SceneController
   layers:
   - Default
   - TransparentFX
@@ -14,7 +14,7 @@ TagManager:
   - UI
   - 
   - 
-  - Clickable
+  - PostProcessing
   - 
   - 
   - 
